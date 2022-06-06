@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E4Z-PJ-pDz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Text Field Out Side Stack View View Controller-->
+        <scene sceneID="hMr-8R-x1n">
+            <objects>
+                <viewController id="E4Z-PJ-pDz" customClass="TextFieldOutSideStackViewViewController" customModule="KeyBoardAndTextFileds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vRY-fB-QQH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEL-Mc-M02">
+                                <rect key="frame" x="5" y="64" width="404" height="672"/>
+                                <color key="backgroundColor" red="0.93080079559999995" green="0.86227840190000005" blue="0.99862951040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL RT DROP  : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcO-jV-kJ8" userLabel="Total : $.000" customClass="Label16BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                <rect key="frame" x="20" y="64" width="144.5" height="89.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nkr-jB-yc1">
+                                <rect key="frame" x="169.5" y="92" width="224.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mQh-C1-kNI" userLabel="Denom">
+                                <rect key="frame" x="10" y="146" width="83" height="448"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Denom" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="uQK-Ir-Igd" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="59.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="du9-ht-bNi" userLabel="$1">
+                                        <rect key="frame" x="0.0" y="64.5" width="83" height="59.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="DyR-aX-Rmt" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="59.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="9oi-4Q-zzF" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="63" y="0.0" width="20" height="59.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="9UZ-9V-L1t"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="41l-Y3-Mdc" userLabel="$2">
+                                        <rect key="frame" x="0.0" y="129" width="83" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="B2W-Qw-L5b" userLabel="$2" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="90p-JX-xTx" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="63" y="0.0" width="20" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="orb-ZE-Ex0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ydf-fF-WQC" userLabel="$5">
+                                        <rect key="frame" x="0.0" y="194" width="83" height="59.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$5" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="xNt-hc-sja" userLabel="$5" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="59.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fby-J3-miI" userLabel="x" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="63" y="0.0" width="20" height="59.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="EO4-Xd-66R"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="xAg-l3-T7k" userLabel="$10">
+                                        <rect key="frame" x="0.0" y="258.5" width="83" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="nxw-qY-bby" userLabel="$10" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="N4I-TW-WJW" userLabel="x" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="63" y="0.0" width="20" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="PI8-xD-b7M"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1LF-wZ-Eeb" userLabel="$20">
+                                        <rect key="frame" x="0.0" y="323.5" width="83" height="59.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="gy4-hU-0Ra" userLabel="$20" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="59.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="biw-zf-reO" userLabel="x" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="63" y="0.0" width="20" height="59.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="wQ6-IP-Siv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="EcY-f8-Kyv" userLabel="$100">
+                                        <rect key="frame" x="0.0" y="388" width="83" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="J4H-GA-A7W" userLabel="$100" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="ebG-K6-tfV" userLabel="x" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="63" y="0.0" width="20" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="o1C-sv-kSz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kbZ-jZ-2H0" userLabel="Amount">
+                                <rect key="frame" x="200.5" y="146" width="99" height="448"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="HJl-Z6-lHq" userLabel="Amount" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="99" height="59.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="VZo-z7-QGw" userLabel="$1">
+                                        <rect key="frame" x="0.0" y="64.5" width="99" height="59.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="sJh-FO-Oj9" userLabel="=" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="59.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="eTo-dO-bNF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="s1Z-Re-5Ee" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="0.0" width="79" height="59.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="d2U-rn-CG8" userLabel="$2">
+                                        <rect key="frame" x="0.0" y="129" width="99" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="TAR-Is-rfY" userLabel="=" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="OUJ-OW-ODw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wqb-Se-6Lp" userLabel="$2" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="0.0" width="79" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="gIe-Qx-0tq" userLabel="$5">
+                                        <rect key="frame" x="0.0" y="194" width="99" height="59.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="fab-41-cMr" userLabel="=" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="59.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="wUg-gP-icS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$5" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="7mA-cj-ZDK" userLabel="$5" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="0.0" width="79" height="59.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="44o-3w-OPN" userLabel="$10">
+                                        <rect key="frame" x="0.0" y="258.5" width="99" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="aTc-50-wPI" userLabel="=" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="cwI-xH-GK0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="54V-xp-Td2" userLabel="$10" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="0.0" width="79" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="haE-hQ-BpH" userLabel="$20">
+                                        <rect key="frame" x="0.0" y="323.5" width="99" height="59.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="xQc-Wd-k3y" userLabel="=" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="59.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="O1o-N7-Y0x"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gth-5p-ZdC" userLabel="$20" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="0.0" width="79" height="59.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="dQr-vL-lqf" userLabel="$100">
+                                        <rect key="frame" x="0.0" y="388" width="99" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="vz4-jZ-ig1" userLabel="=" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="0ZN-24-yKF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="pcp-Tb-DTX" userLabel="$100" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="0.0" width="79" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Gt9-uc-9XG" userLabel="Actual">
+                                <rect key="frame" x="304.5" y="146" width="99.5" height="448"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actual" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="52J-qT-iX3" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="99.5" height="59.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="coj-Qs-c0E" userLabel="$1">
+                                        <rect key="frame" x="0.0" y="64.5" width="99.5" height="59.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✅" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="xjM-6r-4ZJ" userLabel="x" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="59.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="HAF-20-1X0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="rnl-En-K9Z" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="0.0" width="69.5" height="59.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="0Hp-BS-Nl9" userLabel="$2">
+                                        <rect key="frame" x="0.0" y="129" width="99.5" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✅" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="bhW-h7-NjL" userLabel="x" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="lF8-Zn-Tr3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="ziN-tc-skv" userLabel="$2" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="0.0" width="69.5" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="eDc-HK-eLI" userLabel="$5">
+                                        <rect key="frame" x="0.0" y="194" width="99.5" height="59.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✅" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="gm3-6p-fm3" userLabel="x" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="59.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="nwU-EZ-XI7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$5" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="DsI-DC-YNr" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="0.0" width="69.5" height="59.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="o7w-e4-Xeh" userLabel="$10">
+                                        <rect key="frame" x="0.0" y="258.5" width="99.5" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✅" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="L7b-Yv-MZt" userLabel="x" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="Auf-PR-R57"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="7MK-uV-fGf" userLabel="$10" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="0.0" width="69.5" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Jcw-Yi-fLx" userLabel="$20">
+                                        <rect key="frame" x="0.0" y="323.5" width="99.5" height="59.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✅" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="506-lK-1HC" userLabel="x" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="59.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="qhF-LM-zIq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Uwc-4T-Tfb" userLabel="$20" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="0.0" width="69.5" height="59.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="18Z-ka-Hxw" userLabel="$100">
+                                        <rect key="frame" x="0.0" y="388" width="99.5" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✅" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="lrE-tj-jAl" userLabel="x" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="dev-mV-PC2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Aqq-fc-hLq" userLabel="$100" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="0.0" width="69.5" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EG1-wZ-aY5">
+                                <rect key="frame" x="41.5" y="614" width="331" height="44.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJl-2N-pkH" userLabel="Cancel">
+                                        <rect key="frame" x="0.0" y="0.0" width="155.5" height="44.5"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="CANCEL"/>
+                                        <connections>
+                                            <action selector="cancelButtonTapped:" destination="E4Z-PJ-pDz" eventType="touchUpInside" id="J4a-GV-N92"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHz-Pr-IgB">
+                                        <rect key="frame" x="175.5" y="0.0" width="155.5" height="44.5"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Submit Record"/>
+                                        <connections>
+                                            <action selector="submitButtonTapped:" destination="E4Z-PJ-pDz" eventType="touchUpInside" id="Gw9-gY-F8b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quality" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Zgk-9m-VfV" customClass="Label12BoldFontRMS" customModule="RMSiOS" customModuleProvider="target">
+                                <rect key="frame" x="98" y="146" width="97.5" height="59.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bPB-sj-Mcx">
+                                <rect key="frame" x="98" y="223.5" width="97.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r94-1v-rrn">
+                                <rect key="frame" x="98" y="288" width="97.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehA-VC-EJz">
+                                <rect key="frame" x="98" y="353" width="97.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N2t-kQ-Rmg">
+                                <rect key="frame" x="98" y="417.5" width="97.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LBa-Y8-lR4">
+                                <rect key="frame" x="98" y="482" width="97.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hZ5-QD-bpW">
+                                <rect key="frame" x="98" y="547" width="97.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jXw-Qg-qJL"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="kbZ-jZ-2H0" firstAttribute="leading" secondItem="LBa-Y8-lR4" secondAttribute="trailing" constant="5" id="1Yf-Pw-84i"/>
+                            <constraint firstItem="kbZ-jZ-2H0" firstAttribute="leading" secondItem="bPB-sj-Mcx" secondAttribute="trailing" constant="5" id="4xp-mZ-6l6"/>
+                            <constraint firstItem="Zgk-9m-VfV" firstAttribute="top" secondItem="nkr-jB-yc1" secondAttribute="bottom" constant="20" id="5mK-c4-0YC"/>
+                            <constraint firstItem="Gt9-uc-9XG" firstAttribute="height" secondItem="mQh-C1-kNI" secondAttribute="height" id="6Cu-XI-RsF"/>
+                            <constraint firstItem="mQh-C1-kNI" firstAttribute="width" secondItem="vRY-fB-QQH" secondAttribute="width" multiplier="0.2" id="8ye-CM-XJ3"/>
+                            <constraint firstItem="bPB-sj-Mcx" firstAttribute="centerY" secondItem="9oi-4Q-zzF" secondAttribute="centerY" id="A6P-Zq-ldx"/>
+                            <constraint firstItem="mQh-C1-kNI" firstAttribute="height" secondItem="vRY-fB-QQH" secondAttribute="height" multiplier="0.5" id="AoZ-0u-57Y"/>
+                            <constraint firstItem="bPB-sj-Mcx" firstAttribute="leading" secondItem="mQh-C1-kNI" secondAttribute="trailing" constant="5" id="BcW-LS-mCd"/>
+                            <constraint firstItem="GEL-Mc-M02" firstAttribute="height" secondItem="vRY-fB-QQH" secondAttribute="height" multiplier="0.75" id="BgT-Cf-AbH"/>
+                            <constraint firstItem="GEL-Mc-M02" firstAttribute="leading" secondItem="jXw-Qg-qJL" secondAttribute="leading" constant="5" id="C13-Wn-7Ic"/>
+                            <constraint firstItem="LBa-Y8-lR4" firstAttribute="leading" secondItem="mQh-C1-kNI" secondAttribute="trailing" constant="5" id="CfB-rU-tp8"/>
+                            <constraint firstItem="Zgk-9m-VfV" firstAttribute="leading" secondItem="mQh-C1-kNI" secondAttribute="trailing" constant="5" id="Ds2-1D-6k8"/>
+                            <constraint firstItem="kbZ-jZ-2H0" firstAttribute="top" secondItem="nkr-jB-yc1" secondAttribute="bottom" constant="20" id="Epf-ka-wMh"/>
+                            <constraint firstItem="kbZ-jZ-2H0" firstAttribute="height" secondItem="Gt9-uc-9XG" secondAttribute="height" id="FUB-Ub-yCB"/>
+                            <constraint firstItem="NcO-jV-kJ8" firstAttribute="top" secondItem="jXw-Qg-qJL" secondAttribute="top" constant="20" id="J4a-D4-iRY"/>
+                            <constraint firstItem="r94-1v-rrn" firstAttribute="centerY" secondItem="90p-JX-xTx" secondAttribute="centerY" id="Jh6-vV-dVU"/>
+                            <constraint firstItem="Gt9-uc-9XG" firstAttribute="leading" secondItem="kbZ-jZ-2H0" secondAttribute="trailing" constant="5" id="JsO-0P-vpF"/>
+                            <constraint firstItem="kbZ-jZ-2H0" firstAttribute="width" secondItem="Gt9-uc-9XG" secondAttribute="width" id="Lce-OD-Y4w"/>
+                            <constraint firstItem="r94-1v-rrn" firstAttribute="leading" secondItem="mQh-C1-kNI" secondAttribute="trailing" constant="5" id="NzU-AI-GOR"/>
+                            <constraint firstItem="NcO-jV-kJ8" firstAttribute="height" secondItem="vRY-fB-QQH" secondAttribute="height" multiplier="0.1" id="O8h-K9-m5J"/>
+                            <constraint firstItem="Gt9-uc-9XG" firstAttribute="width" secondItem="mQh-C1-kNI" secondAttribute="width" multiplier="1.2" id="OB8-wn-M6H"/>
+                            <constraint firstItem="hZ5-QD-bpW" firstAttribute="centerY" secondItem="ebG-K6-tfV" secondAttribute="centerY" id="OMC-mj-Es7"/>
+                            <constraint firstItem="jXw-Qg-qJL" firstAttribute="trailing" secondItem="GEL-Mc-M02" secondAttribute="trailing" constant="5" id="Piz-SN-ZOd"/>
+                            <constraint firstItem="kbZ-jZ-2H0" firstAttribute="leading" secondItem="r94-1v-rrn" secondAttribute="trailing" constant="5" id="QJ5-I2-his"/>
+                            <constraint firstItem="EG1-wZ-aY5" firstAttribute="height" secondItem="vRY-fB-QQH" secondAttribute="height" multiplier="0.05" id="Qba-os-m2o"/>
+                            <constraint firstItem="hZ5-QD-bpW" firstAttribute="leading" secondItem="mQh-C1-kNI" secondAttribute="trailing" constant="5" id="Qhs-O5-9Pw"/>
+                            <constraint firstItem="ehA-VC-EJz" firstAttribute="centerY" secondItem="Fby-J3-miI" secondAttribute="centerY" id="Qre-OS-Wze"/>
+                            <constraint firstItem="EG1-wZ-aY5" firstAttribute="top" secondItem="mQh-C1-kNI" secondAttribute="bottom" constant="20" id="R3p-53-CzV"/>
+                            <constraint firstItem="jXw-Qg-qJL" firstAttribute="trailing" secondItem="nkr-jB-yc1" secondAttribute="trailing" constant="20" id="Sh6-NU-FXL"/>
+                            <constraint firstItem="EG1-wZ-aY5" firstAttribute="width" secondItem="vRY-fB-QQH" secondAttribute="width" multiplier="0.8" id="YFC-cE-2st"/>
+                            <constraint firstItem="EG1-wZ-aY5" firstAttribute="centerX" secondItem="jXw-Qg-qJL" secondAttribute="centerX" id="ZFt-1p-jHg"/>
+                            <constraint firstItem="ehA-VC-EJz" firstAttribute="leading" secondItem="mQh-C1-kNI" secondAttribute="trailing" constant="5" id="b1G-Ha-7dM"/>
+                            <constraint firstItem="kbZ-jZ-2H0" firstAttribute="leading" secondItem="ehA-VC-EJz" secondAttribute="trailing" constant="5" id="bhE-kG-xYh"/>
+                            <constraint firstItem="mQh-C1-kNI" firstAttribute="leading" secondItem="jXw-Qg-qJL" secondAttribute="leading" constant="10" id="c7P-nh-uxj"/>
+                            <constraint firstItem="kbZ-jZ-2H0" firstAttribute="leading" secondItem="N2t-kQ-Rmg" secondAttribute="trailing" constant="5" id="feN-Nb-Hg5"/>
+                            <constraint firstItem="nkr-jB-yc1" firstAttribute="centerY" secondItem="NcO-jV-kJ8" secondAttribute="centerY" id="hdA-m3-IIl"/>
+                            <constraint firstItem="GEL-Mc-M02" firstAttribute="top" secondItem="jXw-Qg-qJL" secondAttribute="top" constant="20" id="k8H-P0-Ssh"/>
+                            <constraint firstItem="N2t-kQ-Rmg" firstAttribute="centerY" secondItem="N4I-TW-WJW" secondAttribute="centerY" id="lyY-i1-gy2"/>
+                            <constraint firstItem="Gt9-uc-9XG" firstAttribute="centerY" secondItem="kbZ-jZ-2H0" secondAttribute="centerY" id="mLU-9J-pUQ"/>
+                            <constraint firstItem="kbZ-jZ-2H0" firstAttribute="leading" secondItem="Zgk-9m-VfV" secondAttribute="trailing" constant="5" id="mcP-zk-4ET"/>
+                            <constraint firstItem="kbZ-jZ-2H0" firstAttribute="leading" secondItem="hZ5-QD-bpW" secondAttribute="trailing" constant="5" id="rCw-Mn-w0o"/>
+                            <constraint firstItem="mQh-C1-kNI" firstAttribute="top" secondItem="nkr-jB-yc1" secondAttribute="bottom" constant="20" id="ssY-g6-iYy"/>
+                            <constraint firstItem="LBa-Y8-lR4" firstAttribute="centerY" secondItem="biw-zf-reO" secondAttribute="centerY" id="tup-Qg-mMU"/>
+                            <constraint firstItem="jXw-Qg-qJL" firstAttribute="trailing" secondItem="Gt9-uc-9XG" secondAttribute="trailing" constant="10" id="vFD-yE-Ss5"/>
+                            <constraint firstItem="nkr-jB-yc1" firstAttribute="leading" secondItem="NcO-jV-kJ8" secondAttribute="trailing" constant="5" id="xMn-DY-HaF"/>
+                            <constraint firstItem="NcO-jV-kJ8" firstAttribute="leading" secondItem="jXw-Qg-qJL" secondAttribute="leading" constant="20" id="xRX-bz-Cx7"/>
+                            <constraint firstItem="Zgk-9m-VfV" firstAttribute="centerY" secondItem="uQK-Ir-Igd" secondAttribute="centerY" id="yHi-dz-762"/>
+                            <constraint firstItem="N2t-kQ-Rmg" firstAttribute="leading" secondItem="mQh-C1-kNI" secondAttribute="trailing" constant="5" id="yn4-qr-v0g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xcx-ri-WW2"/>
+                    <connections>
+                        <outlet property="tf100dollar" destination="hZ5-QD-bpW" id="4Xk-Ha-mRB"/>
+                        <outlet property="tf10dollar" destination="N2t-kQ-Rmg" id="WjN-7z-BaS"/>
+                        <outlet property="tf1dollar" destination="bPB-sj-Mcx" id="433-lX-Ru4"/>
+                        <outlet property="tf20dollar" destination="LBa-Y8-lR4" id="xfy-gx-s0e"/>
+                        <outlet property="tf2dollar" destination="r94-1v-rrn" id="X5j-OU-UXc"/>
+                        <outlet property="tf5dollar" destination="ehA-VC-EJz" id="4Kw-Rl-VKf"/>
+                        <outlet property="tfTotal" destination="nkr-jB-yc1" id="g6z-0u-Sd4"/>
+                        <outlet property="vwCard" destination="GEL-Mc-M02" id="WuF-55-1ks"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CBI-Vb-Wr4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382.60869565217394" y="679.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
