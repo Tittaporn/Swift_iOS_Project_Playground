@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Buttons On View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ButtonsOnViewController" customModule="CombineIntro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65" y="82"/>
+        </scene>
+        <!--Message View Controller-->
+        <scene sceneID="8yn-Ac-wnf">
+            <objects>
+                <viewController storyboardIdentifier="MessageIdStoryBoardId" id="3dA-2m-WLE" customClass="MessageViewController" customModule="CombineIntro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s0Q-mn-ene">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(CompanyNameLabel)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPH-Sy-2f0">
+                                <rect key="frame" x="30" y="94" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qa3-h4-lxg">
+                                <rect key="frame" x="30" y="205.5" width="354" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Send Message"/>
+                                <connections>
+                                    <action selector="sendMessageButtonTapped:" destination="3dA-2m-WLE" eventType="touchUpInside" id="9nV-8V-mNW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(messageLable)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="SRH-vX-cen">
+                                <rect key="frame" x="30" y="266.5" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1xl-Je-Fsr">
+                                <rect key="frame" x="5" y="144.5" width="404" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Message :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pN-05-rEb">
+                                        <rect key="frame" x="0.0" y="0.0" width="264.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OiB-hU-5QF">
+                                        <rect key="frame" x="280.5" y="0.0" width="125.5" height="31"/>
+                                        <connections>
+                                            <action selector="didSwitch:" destination="3dA-2m-WLE" eventType="valueChanged" id="Qbu-58-xeG"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aWc-jF-J27"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aWc-jF-J27" firstAttribute="trailing" secondItem="HPH-Sy-2f0" secondAttribute="trailing" constant="30" id="4Ci-32-8q4"/>
+                            <constraint firstItem="aWc-jF-J27" firstAttribute="trailing" secondItem="1xl-Je-Fsr" secondAttribute="trailing" constant="5" id="ECB-WH-ScY"/>
+                            <constraint firstItem="qa3-h4-lxg" firstAttribute="top" secondItem="1xl-Je-Fsr" secondAttribute="bottom" constant="30" id="GBS-iD-sMg"/>
+                            <constraint firstItem="SRH-vX-cen" firstAttribute="leading" secondItem="aWc-jF-J27" secondAttribute="leading" constant="30" id="NhZ-Ok-S2A"/>
+                            <constraint firstItem="HPH-Sy-2f0" firstAttribute="leading" secondItem="aWc-jF-J27" secondAttribute="leading" constant="30" id="Snj-vM-Y0B"/>
+                            <constraint firstItem="HPH-Sy-2f0" firstAttribute="top" secondItem="aWc-jF-J27" secondAttribute="top" constant="50" id="VK3-nc-RVO"/>
+                            <constraint firstItem="1xl-Je-Fsr" firstAttribute="top" secondItem="HPH-Sy-2f0" secondAttribute="bottom" constant="30" id="bXL-WQ-Ops"/>
+                            <constraint firstItem="qa3-h4-lxg" firstAttribute="leading" secondItem="aWc-jF-J27" secondAttribute="leading" constant="30" id="m8q-QP-6CW"/>
+                            <constraint firstItem="SRH-vX-cen" firstAttribute="top" secondItem="qa3-h4-lxg" secondAttribute="bottom" constant="30" id="sNa-pi-ER1"/>
+                            <constraint firstItem="aWc-jF-J27" firstAttribute="trailing" secondItem="qa3-h4-lxg" secondAttribute="trailing" constant="30" id="v7M-8d-5wj"/>
+                            <constraint firstItem="aWc-jF-J27" firstAttribute="trailing" secondItem="SRH-vX-cen" secondAttribute="trailing" constant="30" id="wfK-96-DeI"/>
+                            <constraint firstItem="1xl-Je-Fsr" firstAttribute="leading" secondItem="aWc-jF-J27" secondAttribute="leading" constant="5" id="wkx-Nd-PYO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="allowMessageSwitch" destination="OiB-hU-5QF" id="XGS-uu-SNo"/>
+                        <outlet property="companyNameLabel" destination="HPH-Sy-2f0" id="CYy-cj-KIj"/>
+                        <outlet property="messageLable" destination="SRH-vX-cen" id="b4s-eS-asH"/>
+                        <outlet property="sendButton" destination="qa3-h4-lxg" id="Lfl-bR-8pr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TPZ-sy-qr8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756.52173913043487" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

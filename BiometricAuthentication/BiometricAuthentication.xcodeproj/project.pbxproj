@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC6185412723878500A5EA28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6185402723878500A5EA28 /* AppDelegate.swift */; };
+		CC6185432723878500A5EA28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6185422723878500A5EA28 /* SceneDelegate.swift */; };
+		CC6185452723878500A5EA28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6185442723878500A5EA28 /* ViewController.swift */; };
+		CC6185482723878500A5EA28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6185462723878500A5EA28 /* Main.storyboard */; };
+		CC61854A2723878700A5EA28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6185492723878700A5EA28 /* Assets.xcassets */; };
+		CC61854D2723878700A5EA28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC61854B2723878700A5EA28 /* LaunchScreen.storyboard */; };
+		CC6185582723878700A5EA28 /* BiometricAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6185572723878700A5EA28 /* BiometricAuthenticationTests.swift */; };
+		CC6185632723878700A5EA28 /* BiometricAuthenticationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6185622723878700A5EA28 /* BiometricAuthenticationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC6185542723878700A5EA28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC6185352723878500A5EA28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC61853C2723878500A5EA28;
+			remoteInfo = BiometricAuthentication;
+		};
+		CC61855F2723878700A5EA28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC6185352723878500A5EA28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC61853C2723878500A5EA28;
+			remoteInfo = BiometricAuthentication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC61853D2723878500A5EA28 /* BiometricAuthentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiometricAuthentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6185402723878500A5EA28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC6185422723878500A5EA28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CC6185442723878500A5EA28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC6185472723878500A5EA28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC6185492723878700A5EA28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC61854C2723878700A5EA28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC61854E2723878700A5EA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC6185532723878700A5EA28 /* BiometricAuthenticationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiometricAuthenticationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6185572723878700A5EA28 /* BiometricAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticationTests.swift; sourceTree = "<group>"; };
+		CC6185592723878700A5EA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC61855E2723878700A5EA28 /* BiometricAuthenticationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiometricAuthenticationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6185622723878700A5EA28 /* BiometricAuthenticationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticationUITests.swift; sourceTree = "<group>"; };
+		CC6185642723878700A5EA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC61853A2723878500A5EA28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC6185502723878700A5EA28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC61855B2723878700A5EA28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC6185342723878500A5EA28 = {
+			isa = PBXGroup;
+			children = (
+				CC61853F2723878500A5EA28 /* BiometricAuthentication */,
+				CC6185562723878700A5EA28 /* BiometricAuthenticationTests */,
+				CC6185612723878700A5EA28 /* BiometricAuthenticationUITests */,
+				CC61853E2723878500A5EA28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC61853E2723878500A5EA28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC61853D2723878500A5EA28 /* BiometricAuthentication.app */,
+				CC6185532723878700A5EA28 /* BiometricAuthenticationTests.xctest */,
+				CC61855E2723878700A5EA28 /* BiometricAuthenticationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC61853F2723878500A5EA28 /* BiometricAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				CC6185402723878500A5EA28 /* AppDelegate.swift */,
+				CC6185422723878500A5EA28 /* SceneDelegate.swift */,
+				CC6185442723878500A5EA28 /* ViewController.swift */,
+				CC6185462723878500A5EA28 /* Main.storyboard */,
+				CC6185492723878700A5EA28 /* Assets.xcassets */,
+				CC61854B2723878700A5EA28 /* LaunchScreen.storyboard */,
+				CC61854E2723878700A5EA28 /* Info.plist */,
+			);
+			path = BiometricAuthentication;
+			sourceTree = "<group>";
+		};
+		CC6185562723878700A5EA28 /* BiometricAuthenticationTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC6185572723878700A5EA28 /* BiometricAuthenticationTests.swift */,
+				CC6185592723878700A5EA28 /* Info.plist */,
+			);
+			path = BiometricAuthenticationTests;
+			sourceTree = "<group>";
+		};
+		CC6185612723878700A5EA28 /* BiometricAuthenticationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC6185622723878700A5EA28 /* BiometricAuthenticationUITests.swift */,
+				CC6185642723878700A5EA28 /* Info.plist */,
+			);
+			path = BiometricAuthenticationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC61853C2723878500A5EA28 /* BiometricAuthentication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC6185672723878700A5EA28 /* Build configuration list for PBXNativeTarget "BiometricAuthentication" */;
+			buildPhases = (
+				CC6185392723878500A5EA28 /* Sources */,
+				CC61853A2723878500A5EA28 /* Frameworks */,
+				CC61853B2723878500A5EA28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BiometricAuthentication;
+			productName = BiometricAuthentication;
+			productReference = CC61853D2723878500A5EA28 /* BiometricAuthentication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC6185522723878700A5EA28 /* BiometricAuthenticationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC61856A2723878700A5EA28 /* Build configuration list for PBXNativeTarget "BiometricAuthenticationTests" */;
+			buildPhases = (
+				CC61854F2723878700A5EA28 /* Sources */,
+				CC6185502723878700A5EA28 /* Frameworks */,
+				CC6185512723878700A5EA28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC6185552723878700A5EA28 /* PBXTargetDependency */,
+			);
+			name = BiometricAuthenticationTests;
+			productName = BiometricAuthenticationTests;
+			productReference = CC6185532723878700A5EA28 /* BiometricAuthenticationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC61855D2723878700A5EA28 /* BiometricAuthenticationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC61856D2723878700A5EA28 /* Build configuration list for PBXNativeTarget "BiometricAuthenticationUITests" */;
+			buildPhases = (
+				CC61855A2723878700A5EA28 /* Sources */,
+				CC61855B2723878700A5EA28 /* Frameworks */,
+				CC61855C2723878700A5EA28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC6185602723878700A5EA28 /* PBXTargetDependency */,
+			);
+			name = BiometricAuthenticationUITests;
+			productName = BiometricAuthenticationUITests;
+			productReference = CC61855E2723878700A5EA28 /* BiometricAuthenticationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC6185352723878500A5EA28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CC61853C2723878500A5EA28 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					CC6185522723878700A5EA28 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = CC61853C2723878500A5EA28;
+					};
+					CC61855D2723878700A5EA28 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = CC61853C2723878500A5EA28;
+					};
+				};
+			};
+			buildConfigurationList = CC6185382723878500A5EA28 /* Build configuration list for PBXProject "BiometricAuthentication" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC6185342723878500A5EA28;
+			productRefGroup = CC61853E2723878500A5EA28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC61853C2723878500A5EA28 /* BiometricAuthentication */,
+				CC6185522723878700A5EA28 /* BiometricAuthenticationTests */,
+				CC61855D2723878700A5EA28 /* BiometricAuthenticationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC61853B2723878500A5EA28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC61854D2723878700A5EA28 /* LaunchScreen.storyboard in Resources */,
+				CC61854A2723878700A5EA28 /* Assets.xcassets in Resources */,
+				CC6185482723878500A5EA28 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC6185512723878700A5EA28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC61855C2723878700A5EA28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC6185392723878500A5EA28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6185452723878500A5EA28 /* ViewController.swift in Sources */,
+				CC6185412723878500A5EA28 /* AppDelegate.swift in Sources */,
+				CC6185432723878500A5EA28 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC61854F2723878700A5EA28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6185582723878700A5EA28 /* BiometricAuthenticationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC61855A2723878700A5EA28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6185632723878700A5EA28 /* BiometricAuthenticationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC6185552723878700A5EA28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC61853C2723878500A5EA28 /* BiometricAuthentication */;
+			targetProxy = CC6185542723878700A5EA28 /* PBXContainerItemProxy */;
+		};
+		CC6185602723878700A5EA28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC61853C2723878500A5EA28 /* BiometricAuthentication */;
+			targetProxy = CC61855F2723878700A5EA28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC6185462723878500A5EA28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC6185472723878500A5EA28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC61854B2723878700A5EA28 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC61854C2723878700A5EA28 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC6185652723878700A5EA28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC6185662723878700A5EA28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC6185682723878700A5EA28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L73M8R7276;
+				INFOPLIST_FILE = BiometricAuthentication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.m3ts.BiometricAuthentication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC6185692723878700A5EA28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L73M8R7276;
+				INFOPLIST_FILE = BiometricAuthentication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.m3ts.BiometricAuthentication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC61856B2723878700A5EA28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L73M8R7276;
+				INFOPLIST_FILE = BiometricAuthenticationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.m3ts.BiometricAuthenticationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiometricAuthentication.app/BiometricAuthentication";
+			};
+			name = Debug;
+		};
+		CC61856C2723878700A5EA28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L73M8R7276;
+				INFOPLIST_FILE = BiometricAuthenticationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.m3ts.BiometricAuthenticationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiometricAuthentication.app/BiometricAuthentication";
+			};
+			name = Release;
+		};
+		CC61856E2723878700A5EA28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L73M8R7276;
+				INFOPLIST_FILE = BiometricAuthenticationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.m3ts.BiometricAuthenticationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BiometricAuthentication;
+			};
+			name = Debug;
+		};
+		CC61856F2723878700A5EA28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L73M8R7276;
+				INFOPLIST_FILE = BiometricAuthenticationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.m3ts.BiometricAuthenticationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BiometricAuthentication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC6185382723878500A5EA28 /* Build configuration list for PBXProject "BiometricAuthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC6185652723878700A5EA28 /* Debug */,
+				CC6185662723878700A5EA28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC6185672723878700A5EA28 /* Build configuration list for PBXNativeTarget "BiometricAuthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC6185682723878700A5EA28 /* Debug */,
+				CC6185692723878700A5EA28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC61856A2723878700A5EA28 /* Build configuration list for PBXNativeTarget "BiometricAuthenticationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC61856B2723878700A5EA28 /* Debug */,
+				CC61856C2723878700A5EA28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC61856D2723878700A5EA28 /* Build configuration list for PBXNativeTarget "BiometricAuthenticationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC61856E2723878700A5EA28 /* Debug */,
+				CC61856F2723878700A5EA28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC6185352723878500A5EA28 /* Project object */;
+}
