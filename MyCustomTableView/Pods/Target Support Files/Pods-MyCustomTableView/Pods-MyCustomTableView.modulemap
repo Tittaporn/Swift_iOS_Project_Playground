@@ -1,0 +1,6 @@
+framework module Pods_MyCustomTableView {
+  umbrella header "Pods-MyCustomTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

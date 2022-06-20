@@ -1,0 +1,6 @@
+framework module Pods_MyCustomTableView_MyCustomTableViewUITests {
+  umbrella header "Pods-MyCustomTableView-MyCustomTableViewUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
