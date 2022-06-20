@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'DocumentCamera' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for DocumentCamera
+
+  target 'DocumentCameraTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'DocumentCameraUITests' do
+    # Pods for testing
+    pod 'WeScan'
+    pod 'YesWeScan'
+  end
+
+end
