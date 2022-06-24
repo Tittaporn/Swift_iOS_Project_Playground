@@ -30,6 +30,18 @@ class UnitTestExampleTests: XCTestCase {
        // XCTAssertEqual(result, 22) --> This will false the test, the app won't run
     }
     
+    func testMultipleStuffWithSimilarNumbers() { // Test as many cases as posible because one might pass, but the the other might fail
+        let math = MathStuff()
+        let result = math.multipleNumbers(x: 2, y: 2)
+        XCTAssertEqual(result, 4)
+    }
+    
+    func testMultipleStuffWithDifferentNumbers() { // Test as many cases as posible because one might pass, but the the other might fail
+        let math = MathStuff()
+        let result = math.multipleNumbers(x: 2, y: 3)
+        XCTAssertEqual(result, 6)
+    }
+    
     func testDivideStuff() {
         let math = MathStuff()
         let result = math.divideNumbers(x: 10, y: 2)
@@ -42,6 +54,7 @@ class UnitTestExampleTests: XCTestCase {
  https://www.youtube.com/watch?v=-eiY9eauJr0
  https://www.youtube.com/watch?v=P-Zow2yVx4o
  https://www.youtube.com/watch?v=64EwwjWw1kc
+ https://www.youtube.com/watch?v=5lPtpikEbCo
  https://x-team.com/blog/how-to-get-started-with-ios-unit-tests-in-swift/
  https://medium.com/mobil-dev/quick-and-nimble-5c90aa6b3d48
  

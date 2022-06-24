@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import UnitTestExample
+@testable import UnitTestExample // If can not find the class, don't forget to import this...
 
 // Source : https://www.youtube.com/watch?v=P-Zow2yVx4o
 
